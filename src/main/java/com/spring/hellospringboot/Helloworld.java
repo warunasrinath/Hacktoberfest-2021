@@ -9,6 +9,7 @@ import java.util.List;
 public class Helloworld {
     @GetMapping
     public List<String> getHelloworld(){
-        return List.of("Hello Woorld");
+        String x = "HACKTOBER FEST 2021 !!!";
+        return List.of(x);
     }
 }
