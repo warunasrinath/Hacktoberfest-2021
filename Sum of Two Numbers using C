@@ -1,0 +1,18 @@
+#include<stdio.h>
+void main()
+{
+    //variable declaration
+int a,y,z;
+
+printf("enter two numbers for sum \n");
+
+//input from user
+scanf("%d%d",&x,&y);
+
+//process
+z=a+y;
+
+//final output
+printf("The sum is %d",z);
+
+}
