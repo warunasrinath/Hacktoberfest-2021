@@ -1,3 +1,8 @@
-prices = [175.55, 33.11, 75.15]
+prices=[]
+n=int(input("Enter a Total no. of array:"))
+for i in range(n):
+    b=float(input("Entar elements:"))
+    prices.append(b)
+    
 prices.sort()
 print(prices)
