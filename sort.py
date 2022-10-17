@@ -1,4 +1,8 @@
-a = [1, 39, 11, 55, 100, 22, 64]
+a = []
+n=int(input("Enter total elements of array:"))
+for k in range(n):
+        b=int(input("Enter elements of array:"))
+        a.append(b)
 
 
 for j in range(len(a)):
