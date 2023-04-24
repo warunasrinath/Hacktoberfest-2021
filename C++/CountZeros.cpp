@@ -1,33 +1,17 @@
-// Count Zeros
-
-#include <iostream>
+#include<iostream>
 using namespace std;
+int main() {
 
-int countZeros(int n)
-{
-    int zeros = 0;
-    if (n / 10 == 0)
-    {
-        if (n == 0)
-        {
-            return 1;
-        }
-        else
-        {
-            return 0;
-        }
-    }
-    int ans = countZeros(n / 10);
-    if (n % 10 == 0)
-    {
-        ans++;
-    }
-    return ans;
-}
+    int n, count = 0;
 
-int main()
-{
-    int n;
-    cin >> n;
-    cout << countZeros(n) << endl;
+    cout << "Enter a number: "; cin >> n;
+
+    while (n != 0) { // loop until the last digit is zero. 
+        if (n % 10 == 0) count++; // increment the counter when we find a zero. 
+        n /= 10; // remove the last digit from our number. 
+    }
+
+    cout << "The number of zeros in your entered number is: " << count << endl;
+
+	return 0;
 }
